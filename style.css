@@ -148,13 +148,14 @@ a{
 .img-merlina{
     position: absolute;
     margin-top: 40%;
-    z-index: 1;
+    
     filter: drop-shadow(5px 5px 5px rgba(15, 15, 15, 0.356));
     animation: efecto-flotante 10s ease-in-out infinite;
 }
 
 .img-merlina img{
     mask-image: linear-gradient(black 80%, transparent);
+    z-index: 1;
 }
 
 button{
