@@ -20,7 +20,7 @@ main{
     height: 100vh;
     max-width: 450px;
     background-color: #000000;
-    background-image: url("/assets/images/fondo2.jpg");
+    background-image: url("/assets/images/fondo3.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -55,12 +55,13 @@ a{
     justify-content: center;
     filter: drop-shadow(5px 5px 5px rgba(15, 15, 15, 0.356));
     position: relative;
+    z-index: 100;
 }
 
 .img-bandera{
     width: 100%;
     position: absolute;
-    z-index: -1;
+    z-index: 100;
 }
 
 .text-chloe{
@@ -70,6 +71,7 @@ a{
     color: #ffffff;
     line-height: 3.8rem;
     filter: drop-shadow(2px 2px 2px #000000);
+    z-index: 100;
 }
 
 .text-cumplo2{
@@ -77,6 +79,7 @@ a{
     font-weight: bold;
     font-size: 30px;
     filter: drop-shadow(2px 2px 2px #E825D4);
+    z-index: 100;
 }
 
 .cont-detalles{
@@ -89,6 +92,7 @@ a{
     flex-direction: row;
     justify-content: center;
     font-size: 1.5rem;
+    z-index: 100;
 }
 
 .cont-fecha-detalles{
@@ -96,6 +100,7 @@ a{
     border-right:dotted #fff 1px;
     padding-right: 3px;
     text-align: center;
+    z-index: 100;
 }
 
 .cont-lugar-detalles{
@@ -105,6 +110,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 100;
 }
 
 .cont-hora-detalles{
@@ -112,6 +118,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 100;
 }
 
 .text-te-esperamos{
@@ -119,12 +126,14 @@ a{
     filter: drop-shadow(2px 2px 2px #E825D4);
     font-weight: bold;
     font-size: 25px;
+    z-index: 100;
 }
 
 .cont-buttons{
     width: 80%;
     display: flex;
     justify-content: space-between;
+    z-index: 100;
 }
 
 .img-rayo{
@@ -134,6 +143,18 @@ a{
 
 .img-rayo img{
     height: 30vh;
+}
+
+.img-merlina{
+    position: absolute;
+    margin-top: 40%;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 5px rgba(15, 15, 15, 0.356));
+    animation: efecto-flotante 10s ease-in-out infinite;
+}
+
+.img-merlina img{
+    mask-image: linear-gradient(black 80%, transparent);
 }
 
 button{
