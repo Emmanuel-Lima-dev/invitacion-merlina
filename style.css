@@ -10,7 +10,6 @@ body{
     justify-content: center;
     width: 100%;
     font-family: 'Macondo', cursive;
-    
 }
 
 header{
@@ -126,6 +125,15 @@ a{
     width: 80%;
     display: flex;
     justify-content: space-between;
+}
+
+.img-rayo{
+    z-index: 10;
+    position: absolute;
+}
+
+.img-rayo img{
+    height: 30vh;
 }
 
 button{
